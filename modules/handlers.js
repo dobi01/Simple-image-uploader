@@ -8,6 +8,11 @@ exports.welcome = function(request, response) {
         response.write(html);
         response.end();
     });
+    // fs.readFile('styles/style.css', function(err, css) {
+    //     response.writeHead(200, {"Content-Type": "text/css; charset=utf-8"});
+    //     response.write(css);
+    //     response.end();
+    // });
 }
 
 exports.upload = function(request, response) {
@@ -20,12 +25,16 @@ exports.upload = function(request, response) {
         response.write("<img src='/show' />");
         response.end();
     });
-}
-
-exports.error = function(request, response) {
-    console.log("Nie wiem co robić.");
-    response.write("404 :(");
-    response.end();
+    // fs.readFile('templates/upload.html', function(err, html) {
+    //     response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
+    //     response.write(html);
+    //     response.end();
+    // });
+    // fs.readFile('styles/style.css', function(err, css) {
+    //     response.writeHead(200, {"Content-Type": "text/css; charset=utf-8"});
+    //     response.write(css);
+    //     response.end();
+    // });
 }
 
 exports.show = function(request, response) {
@@ -34,4 +43,10 @@ exports.show = function(request, response) {
         response.write(file, "binary");
         response.end();
     });
+}
+
+exports.error = function(request, response) {
+    console.log("Nie wiem co robić.");
+    response.write("404 :(");
+    response.end();
 }
