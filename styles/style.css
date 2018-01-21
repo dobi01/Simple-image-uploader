@@ -1,4 +1,28 @@
-body {
-  background: #aaa;
-  color: red;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  /* text-align: center; */
+}
+
+div {
+  border: .5px solid #000;
+  width: 300px;
+  padding: 50px;
+  margin: 20vh auto;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+
+#choose {
+  padding: 10px 0;
+}
+
+#sub {
+  padding: 0 5px;
 }
