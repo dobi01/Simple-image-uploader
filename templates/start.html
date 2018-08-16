@@ -9,13 +9,13 @@
 </head>
 <body>
     <div>
-      <h1>Wgraj plik</h1>
+      <h1>Upload image (png)</h1>
       <form action="/upload" enctype="multipart/form-data" method="post">
-          <label>Tytuł pliku</label>
-          <input type="text" name="title">
+          <label>Filename</label>
+          <input id="filename" type="text" name="title">
           <br>
           <input id="choose" type="file" name="upload" multiple="multiple"><br>
-          <input id="sub" type="submit" value="Wyślij">
+          <input id="sub" type="submit" value="Send">
       </form>
     </div>
 </body>
